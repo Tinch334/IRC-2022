@@ -15,7 +15,7 @@ loop:
         sge $t1, $t0, 0 #If $t0 >= 0 then set $t1.
         sb $t1, res($s2) #Store the result of the operation
         
-        add $s2, $s2, 1 #Increment the counter.
+        add $s2, $s2, 1 #Increment the loop counter.
         
         bne $s2, 3, loop
         nop
